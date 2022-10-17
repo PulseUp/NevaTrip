@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ</title>
+    <link rel="stylesheet" href="css/style_zakaz.css">
+</head>
+<body>
+<div class="osnova">
+    <div class="container">
+
+        <h1 style="text-align: center">Заказ билетов</h1>
+        <div class="block__one">
+            <div>
+            <h3>Выберите мероприятие:</h3>
+            <select id="route">
+                <option value="0">Выберите маршрут</option>
+                <option value="1">из A в B</option>
+                <option value="2">из B в A</option>
+                <option value="3">из A в B и обратно в А</option>
+            </select>
+            </div>
+            <div>
+            <h3>Выберите время:</h3>
+            <select id="time">
+
+            </select>
+            </div>
+            <div id="timeab">
+                <h3>Выберите время обратной отправки:</h3>
+            <select id="time__ab">
+
+            </select>
+            </div>
+        </div>
+
+        <h3>Количество людей:</h3>
+        <input id="summa" type="number" name="message">
+        <input type="button" value="Подсчитать" onclick="summ()">
+        <div id="result__div">
+            <label id="result"></label>
+        </div>
+    </div>
+    </div>
+    <script src="js/route.js"></script>
+</body>
+</html>

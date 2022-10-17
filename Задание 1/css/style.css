@@ -1,0 +1,170 @@
+body{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6,li{
+    font-weight: normal;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.block__one{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: 1106px;
+    margin: 10px 5px 40px 5px;
+
+}
+
+.block__left{
+    padding: 0;
+
+
+}
+.image{
+    margin: 0;
+    height: 100%;
+    position: inherit;
+}
+.image img{
+    height: 100%;
+    max-width: 473px;
+
+
+}
+.prev{
+    position: absolute;
+    margin-top: 46px;
+    text-align: center;
+    max-width: 180px;
+    max-height: 45px;
+}
+.prev h3{
+    margin: 0px 10px;
+    padding: 5px 10px;
+}
+
+.block__right{
+    margin: 16px 17px 27px 18px;
+    flex-wrap: wrap;
+}
+.block__right h3{
+    margin-top: -20px;
+}
+
+.spisok{
+    list-style-image: url("../image/Vector.png");
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: -11px;
+}
+.spisok br{
+    display: none;
+}
+
+.spisok a{
+    background: #C5DCFF;
+    padding: 4px 15px 4px 15px;
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.spisok li{
+    margin-left: -15px;
+}
+.spisok a:hover{
+    background: #6BA6FF;
+}
+#doptime{
+    display: none;
+    margin-left: 5px;
+}
+#doptime li{
+    display: inline;
+    margin-left: 0px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    line-height: 0.5em;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+}
+
+.detailed{
+    width: 187px;
+    height: 52px;
+    border-radius: 23px;
+    background: #FFD83C;
+    font-size: 18px;
+    cursor: pointer;
+}
+.overprice{flex-basis: 129px}
+
+@media (max-width: 500px) {
+    .block__one{
+        flex-wrap: wrap;
+        border-radius: 15px;
+    }
+    .block__one div:nth-child(1){
+        width: 100%;
+        height: 100%;
+    }
+    .block__one div:nth-child(2){
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+        height: 220px;
+        border-radius: 15px;
+    }
+    h1,h2,h3,h4,h5,h6,li{
+        font-size: 14px;
+    }
+    .block__right h3{
+        margin-top: -10px;
+    }
+    .block__right h1{
+        font-weight: 600;
+    }
+    .detailed{
+        width: 165px;
+        height: 44px;
+
+    }
+    .h4{font-size: 10px}
+    .price{align-items: center}
+    .spisok {color: #4B4B4B}
+    .spisok br{display: initial;}
+    .prev {
+        max-width: 99px;
+        max-height: 35px;
+        margin-top: 0px;
+        border-radius: 15px 0px 12px;
+    }
+    .prev h3 {
+    font-size: 12px;
+    }
+    #doptime{
+        margin-left: -40px;
+    }
+    .overprice h1{
+        font-size: 30px;
+    }
+}
+@media (max-width: 780px) {
+    .image img {
+        max-height: 516px;
+        max-width: 390px;
+    }
+    .spisok br{display: initial;}
+    #doptime{
+        margin-left: -40px;
+    }
+}

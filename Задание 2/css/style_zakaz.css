@@ -1,0 +1,41 @@
+.container{
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 30px;
+    border-radius: 30px;
+    background: white;
+}
+body{
+    background: rgb(252,211,138);
+    background: linear-gradient(90deg, rgba(252,211,138,0.9304096638655462) 0%, rgba(255,243,160,0.9220063025210083) 52%, rgba(255,254,161,0.7231267507002801) 100%);
+}
+.osnova{
+    margin-top: 200px;
+}
+.block__one{
+    display: flex;
+}
+.block__one div{
+    margin-right: 20px;
+}
+
+.block__two__1{
+    display: flex;
+}
+
+.block__two__1 div{
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#timeab{
+    display: none;
+}
+
+#result__div{
+    display: none;
+    background: #F4F5F7;
+    margin: 20px;
+    padding: 20px;
+}
